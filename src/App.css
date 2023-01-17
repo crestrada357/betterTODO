@@ -47,6 +47,11 @@
   line-height: 24px;
   font-weight: 400;
 }
-.TodoItem-p--complete {
+.TodoItem-p--completed {
   text-decoration: line-through;
+}
+.search-button{
+  border-radius: 5px;
+  background-color: #00d0ff;
+  color: #ffffff;
 }

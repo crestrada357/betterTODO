@@ -1,8 +1,8 @@
 import React from 'react';
 
-function TodoCounter(){
+function TodoCounter({completedTodos, totalTodos}){
     return(
-        <h1 className='task-counter'>2 out of 3 tasks done</h1>
+        <h1 className='task-counter'>{completedTodos} out of {totalTodos} tasks done</h1>
     );
 }
 
