@@ -1,14 +1,12 @@
 import React from "react";
 
 function TodoItem(props){
-    const onClickButton = (msg) => {
-        alert(msg);
-    };
+
     return(
         <li className="todo-item">
         <button 
             className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`}
-            onClick={() => onClickButton('Aquí se debería abrir el modal')}
+            onClick={props.onComplete}
         >
             ✓
         </button>
@@ -18,6 +16,7 @@ function TodoItem(props){
         <span className="todo-delete-button">
             <button 
                 className="delete-task-button"
+                onClick={props.onDelete}
             >
                 X
             </button>

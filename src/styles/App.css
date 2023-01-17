@@ -55,3 +55,17 @@
   background-color: #00d0ff;
   color: #ffffff;
 }
+.Icon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  /* background-color: #CCC; */
+}
+.Icon-check--active {
+  color: #4caf50;
+}
